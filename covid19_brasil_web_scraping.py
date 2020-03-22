@@ -1,3 +1,4 @@
+# coding=utf-8
 # URL onde está localizada a tabela: https://www.worldometers.info/coronavirus/#countries
 
 import pandas as pd
@@ -26,10 +27,10 @@ def covid19_brazil(web_page):
       df_brazil.loc[df_brazil.Fonte == "Brazil", "Fonte"] = "Brasil"
       df_brazil.loc[df_brazil.Fonte == "Total:", "Fonte"] = "Mundo"
       df_brazil = df_brazil.set_index("Fonte")
-      df_brazil["TotalDeÓbitos"] = df_brazil.TotalDeÓbitos.astype('int')
-      df_brazil["NovosÓbitos"] = df_brazil.NovosÓbitos.astype('int')
-      df_brazil["Recuperações"] = df_brazil.Recuperações.astype('int')
-      df_brazil["CasosGraves"] = df_brazil.CasosGraves.astype('int')
+      #df_brazil["TotalDeÓbitos"] = df_brazil.TotalDeÓbitos.astype('int')
+      #df_brazil["NovosÓbitos"] = df_brazil.NovosÓbitos.astype('int')
+      #df_brazil["Recuperações"] = df_brazil.Recuperações.astype('int')
+      #df_brazil["CasosGraves"] = df_brazil.CasosGraves.astype('int')
 
       print ("COVID-19: dados do Brasil comparados aos totais mundiais\n")
       print ("Posição no ranking mundial: %i\n" %ranking)
