@@ -3,11 +3,11 @@ Estudo inicial de Python com Pandas para analisar dados da COVID-19, com mais fo
 
 # Pré-requisitos:
 
-1. Atualização de repositórios do SO: apt update && apt upgrade -y
-2. Instalação do pip3: apt install -y python3-pip
+1. Atualização de repositórios do SO: `apt update && apt upgrade -y`
+2. Instalação do pip3: `apt install -y python3-pip`
 3. Instalação do SetupTools, BeautifulSoup4 e Pandas:
-3.1. Via repositório do SO: apt install -y python3-setuptools python3-bs4 python3-pandas
-3.2. Via pip3: pip3 install setuptools beautifulsoup4 pandas
+- Via repositório do SO: `apt install -y python3-setuptools python3-bs4 python3-pandas`
+- Via pip3: `pip3 install setuptools beautifulsoup4 pandas`
 
-OBS: se a instalação do Pandas falhar, talvez seja necessário atualizar a versão do PIP:
-pip3 install --upgrade pip
+**OBS: se a instalação do Pandas falhar, talvez seja necessário atualizar a versão do PIP:
+`pip3 install --upgrade pip`**
