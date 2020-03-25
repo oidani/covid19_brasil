@@ -22,8 +22,9 @@ def covid19_brazil(web_page):
       df_brazil = df[df["Country,Other"].isin(["Brazil", "Total:"])]
       ranking = df_brazil.index[0]+1
       df_brazil.columns = ["Fonte", "TotalDecasos", "NovosCasos", "TotalDeÓbitos", "NovosÓbitos",
-                          "Recuperações", "CasosAtivos", "CasosGraves", "DELETAR"]
-      df_brazil = df_brazil.drop(["DELETAR"], axis=1)
+                          "Recuperações", "CasosAtivos", "CasosGraves", "DELETAR 1", "DELETAR 2"]
+      df_brazil = df_brazil.drop(["DELETAR 1"], axis=1)
+      df_brazil = df_brazil.drop(["DELETAR 2"], axis=1)
       df_brazil.loc[df_brazil.Fonte == "Brazil", "Fonte"] = "Brasil"
       df_brazil.loc[df_brazil.Fonte == "Total:", "Fonte"] = "Mundo"
       df_brazil = df_brazil.set_index("Fonte")
